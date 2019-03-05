@@ -51,6 +51,5 @@ const boxIntensity = day => {
     task.completed.some(completed => completed === day)
   )
   let donePercentage = Math.ceil((doneTasks.length * 100)/tasks.length)/100
-  console.log(donePercentage.toString())
   return donePercentage.toString()
 }
