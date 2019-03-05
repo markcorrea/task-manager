@@ -1,6 +1,7 @@
 import React from 'react'
 
 import formatDate from './utilities'
+import { tasks } from './services'
 
 const getNextSaturday = referenceDate => {
   let saturdayDate = referenceDate
@@ -35,8 +36,21 @@ const getPreviousYear = () => {
 
 export default () => (
   <div className='annual-container'>
-    {getPreviousYear().map((day, index) => {
-      return <div key={`${day}_${index}`} className='annual-cell' />
+    {getPreviousYear().map(day => {
+      return (
+        <div key={`${day}`} className='annual-cell'>
+          <div className='annual-color' style={{ opacity: boxIntensity(day) }} />
+        </div>
+      )
     })}
   </div>
 )
+
+const boxIntensity = day => {
+  let doneTasks = tasks.filter(task =>
+    task.completed.some(completed => completed === day)
+  )
+  let donePercentage = Math.ceil((doneTasks.length * 100)/tasks.length)/100
+  console.log(donePercentage.toString())
+  return donePercentage.toString()
+}

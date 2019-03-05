@@ -11,21 +11,26 @@ const tasks = [
   },
   {
     id: 3,
-    name: 'Study programming',
+    name: 'Programming',
     completed: [],
   },
   {
     id: 4,
-    name: 'Physical activity',
+    name: 'Physical',
     completed: ['20190302', '20190304', '20190305'],
   },
   {
     id: 5,
-    name: 'Study japanese',
+    name: 'Japanese',
     completed: ['20190303', '20190304', '20190305'],
   },
+  {
+    id: 5,
+    name: 'English',
+    completed: ['20190302', '20190304', '20190305'],
+  }
 ]
 
-export default {
+export {
   tasks,
 }
