@@ -4,10 +4,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import '@babel/polyfill'
 
-import '../favicon.ico'
 import './media/styles/main.scss'
+import MainForm from './components/MainForm'
 
-render(
-    <div>aqui</div>,
-  document.getElementById('root')
-)
+render(<MainForm />, document.getElementById('root'))

@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+  li:before {
+    content: "\B0";
+    width: 1.2em;
+    padding: 5px;
+    color: #18A635;
+  }
+}
+
+table {
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  th {
+    font-weight: inherit;
+    font-size: inherit;
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}
