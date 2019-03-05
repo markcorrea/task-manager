@@ -1,4 +1,5 @@
 $standardGreen: #18A635;
+$standardGray: #eeeeee;
 
 body {  
   background-color: #f7fcf9;
@@ -54,8 +55,8 @@ body {
   right: 0;
 }
 
-@media(min-width: 640px) {
+@media(min-width: 800px) {
   .container {
-    max-width: 640px;
+    max-width: 800px;
   }
 }

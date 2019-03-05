@@ -14,13 +14,23 @@ table {
   width: 100%;
   font-size: inherit;
   font-weight: inherit;
+  border-collapse: collapse;
   th {
     font-weight: inherit;
-    font-size: inherit;
+    font-size: 0.6rem;
     text-align: center;
+    padding-bottom: 3px;
   }
   td {
     text-align: center;
+    border-top: solid thin $standardGray;
+    border-bottom: solid thin $standardGray;
+    &:first-child {
+      border-left: solid thin $standardGray;
+    }
+    &:last-child {
+      border-right: solid thin $standardGray;
+    }
   }
 }
 
@@ -29,11 +39,11 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  height: 70px;
+  height: 84px;
   .annual-cell {
-    width: 7px;
-    height: 7px;
-    background-color: #aaaaaa;
+    width: 10px;
+    height: 10px;
+    background-color: #eeeeee;
     margin: 1px;
   }
 }
